@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2: CSS Styling</title>
+</head>
+<body>
+    <style>
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 24px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .idea {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24;
+            text-align: center;
+            padding: 24px;
+        }
+
+        .idea p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size:  20px;
+            color: bisque;
+            letter-spacing: 1px;
+            line-height: 2.0;
+
+        }
+
+        .idea div {
+            background-color:coral;
+            padding: 10px;
+        }
+
+        .box-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            min-height: 80px;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 8px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            background: #fafafa;
+            transition: all 0.2s ease;
+            white-space: normal;
+            word-break: break-word;
+            line-height: 1.3;
+        }
+    </style>
+
+    <header>
+        <h1>Ideas for My Final Project</h1>
+    </header>
+
+    <main>
+        <section class="idea" id="idea1" style="background-color:darkslateblue;">
+            <h2 style="color: mintcream;">1. Communual Archives</h2>
+            <p>People can share artefacts they recognise significant to their life and tell stories about them,
+                whether they are film posters from the 80s, floppy disks, toy collecion, bus ticket, etc. At the same time, 
+                other users can share opinions or experiences to those artfects,
+                outlining the shape of time together!
+            </p>
+
+            <div>
+                <h3 style="color:darkslategrey;">References</h3>
+                <a class="box-link" href="https://www.nas.gov.sg/archivesonline/">National Archives Singapore</a>
+                <a class="box-link" href="https://queerarchives.org.au/">Australian Queer Archives</a>
+                <img width="300" title="Poster" src="https://queerarchives.org.au/app/uploads/2020/10/Wimmins-Dance-Sydney-NSW-Australia-Girls-Own-1981-A003-Web.jpg" alt="A poster for dance party with women holding hands together">
+            </div>
+        </section>
+
+        <section class="idea" id="idea2" style="background-color:cornflowerblue;">
+            <h2 style="color: aliceblue;">2. Map of Urban Legends / Folk Tales</h2>
+            <p>In this website, the geographical location where a tale likely originates is displayed,
+                and its connections to legends or tales of similar themes or motifs are shown.
+                The idea is to highlight the universality of stories or narratives across the world,
+                opening oppurtunity to explore or track how tale is dispersed
+            </p>
+            <div>
+                <h3 style="color:darkslategrey;">References</h3>
+                <a class="box-link" href="https://www.isof.se/other-languages/english/the-map-of-nordic-legends">The Map of Nordic Legends</a>
+                <a class="box-link" href="https://www.tandfonline.com/doi/full/10.1080/17445647.2024.2434015">Supernatural beings of Pomerania</a>
+                <img width="500" title="Map" src="https://www.tandfonline.com/cms/asset/68f687c9-3772-4ec1-8fc0-3d3b5c609096/tjom_a_2434015_f0001_oc.jpg" alt="A map where ethnographic research was conducted">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
