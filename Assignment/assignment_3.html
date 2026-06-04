@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 - CSS Layout</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        header {
+            display: flex;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(to right, yellow, skyblue);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .col1 {
+            flex: 0 0 200px;
+        }
+
+        .col2 {
+            flex: 2;
+        }
+
+        .col3 {
+            flex: 1;
+            background-color:cornflowerblue;
+        }
+
+        .searchbar {
+            padding: 5%;
+            background: palevioletred;
+            margin-top: 2%;
+        }
+
+        .searchfilter {
+            padding: 5%;
+            color: antiquewhite;
+            background: teal;
+            margin-top: 1%;
+        }
+
+        .detailbox {
+            margin-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Global Folklores and Archives</h1>
+    </header>
+
+    <div class="content">
+        <div class="col1">
+            <div class="searchbar">Search Box</div>
+            <div class="searchfilter">Filter Box</div>
+        </div>
+
+        <div class="col2">
+            <p>World Atlas</p>
+            <img width="600" title="world atlas" src="https://www.worldmap1.com/map/world/physical/physical_map_of_world.jpg" alt="world map">
+        </div>
+
+        <div class="col3">
+            <div class="detailbox">Detail Section</div>
+        </div>
+    </div>
+
+</body>
+</html>
